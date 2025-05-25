@@ -1,8 +1,13 @@
 {
-    "crons": [
-        {
-            "path": "/api/pickwinner",
-            "schedule": "0 * * * *"
-        }
-    ]
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "env": {
+    "NODE_OPTIONS": "--max-old-space-size=2048"
+  },
+  "functions": {
+    "pages/api/**/*.js": {
+      "maxDuration": 10
+    }
+  }
 }
