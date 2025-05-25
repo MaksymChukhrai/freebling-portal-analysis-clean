@@ -64,6 +64,7 @@ Thumbs.db
 # Logs
 logs
 *.log
+npm-debug.log*
 
 # Runtime data
 pids
@@ -83,3 +84,9 @@ coverage/
 # Temporary files
 *.tmp
 *.temp
+
+# Build cache
+build/
+.next/
+node_modules/
+package-lock.json
