@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  distDir: "build",
+  // УБИРАЕМ distDir - это вызывает проблемы с routes-manifest
+  // distDir: "build",
+  
   images: {
     domains: ['firebasestorage.googleapis.com', 'lh3.googleusercontent.com'],
     unoptimized: true,
@@ -15,7 +17,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   
-  // Отключаем CSS оптимизацию для решения проблем с TailwindCSS
+  // Отключаем CSS оптимизацию
   experimental: {
     optimizeCss: false,
   },
