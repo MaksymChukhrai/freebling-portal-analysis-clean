@@ -52,6 +52,9 @@
     "twitter-api-v2": "^1.14.2",
     "uuid": "^9.0.0",
     "viem": "^1.1.4",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4",
     "wagmi": "^1.2.1"
   },
   "devDependencies": {
@@ -59,9 +62,6 @@
     "@types/react": "^18.0.26",
     "@types/react-slick": "^0.23.10",
     "@types/uuid": "^9.0.8",
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.20",
-    "tailwindcss": "^3.2.4",
     "typescript": ">=5.0.4"
   }
 }
