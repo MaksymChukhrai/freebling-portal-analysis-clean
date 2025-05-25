@@ -6,18 +6,12 @@ const nextConfig = {
     unoptimized: true,
   },
   
-  // Отключаем строгие проверки для деплоя
   typescript: {
     ignoreBuildErrors: true,
   },
   
   eslint: {
     ignoreDuringBuilds: true,
-  },
-  
-  // Отключаем телеметрию
-  experimental: {
-    telemetry: false,
   },
 };
 
