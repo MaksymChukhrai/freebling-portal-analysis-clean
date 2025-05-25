@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // УБИРАЕМ distDir - это вызывает проблемы с routes-manifest
-  // distDir: "build",
-  
   images: {
     domains: ['firebasestorage.googleapis.com', 'lh3.googleusercontent.com'],
     unoptimized: true,
@@ -17,23 +14,13 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   
-  // Отключаем CSS оптимизацию
+  // ВКЛЮЧАЕМ CSS оптимизацию
   experimental: {
-    optimizeCss: false,
+    optimizeCss: true, // Включили обратно
   },
   
+  // Убираем webpack exclusions - больше не нужны
   webpack: (config, { isServer }) => {
-    // Отключаем CSS модули для внешних библиотек
-    config.module.rules.forEach((rule) => {
-      if (rule.test && rule.test.toString().includes('css')) {
-        rule.exclude = [
-          /node_modules\/@reactour/,
-          /node_modules\/cropperjs/,
-          /node_modules\/react-responsive-modal/,
-          /node_modules\/slick-carousel/,
-        ];
-      }
-    });
     return config;
   },
 };

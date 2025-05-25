@@ -1,3 +1,0 @@
-# Ignore TailwindCSS config during build
-tailwind.config.js
-postcss.config.js
