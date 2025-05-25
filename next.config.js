@@ -14,15 +14,10 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   
-  // ВКЛЮЧАЕМ CSS оптимизацию
-  experimental: {
-    optimizeCss: true, // Включили обратно
-  },
-  
-  // Убираем webpack exclusions - больше не нужны
-  webpack: (config, { isServer }) => {
-    return config;
-  },
+  // УБИРАЕМ experimental совсем - это вызывает проблемы
+  // experimental: {
+  //   optimizeCss: false,
+  // },
 };
 
 module.exports = nextConfig;
