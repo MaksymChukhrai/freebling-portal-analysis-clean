@@ -1,6 +1,7 @@
 module.exports = {
   plugins: {
-    tailwindcss: {},
+    // Временно убираем tailwindcss для успешного деплоя
+    // tailwindcss: {},
     autoprefixer: {},
   },
 }
