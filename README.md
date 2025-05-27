@@ -194,7 +194,7 @@ NPM Installation
 
 **Go to the project root folder:**
 ```bash
-cd <your project folder>
+cd <project root folder> - go to the project root folder
 ```
 **Install all project dependencies:**
 
