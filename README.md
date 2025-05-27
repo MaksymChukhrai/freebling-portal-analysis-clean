@@ -247,6 +247,6 @@ npm start
 ```
 **Note:** The project includes mock Firebase services for development, so it will run even without real Firebase credentials.
 
-[Live demo deployed on Vercel:](https://freebling-portal-demo.vercel.app)
+[Live demo deployed on Vercel](https://freebling-portal-demo.vercel.app)
 
 **Author: [Maksym Chukhrai](https://www.mchukhrai.com)**
