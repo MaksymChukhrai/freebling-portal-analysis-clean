@@ -194,7 +194,7 @@ NPM Installation
 
 **Go to the project root folder:**
 ```bash
-cd freebling-portal-analysis-clean
+cd <your project folder>
 ```
 **Install all project dependencies:**
 
