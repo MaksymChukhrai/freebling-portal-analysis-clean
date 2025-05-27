@@ -192,22 +192,20 @@ git clone https://github.com/MaksymChukhrai/freebling-portal-analysis-clean.git
 
 NPM Installation
 
+**Go to the project root folder:**
 ```bash
 cd freebling-portal-analysis-clean
 ```
-
-**Go to the project root folder:**
+**Install all project dependencies:**
 
 ```bash
 npm install
 ```
+**Start the development server:**
 
-**Install all project dependencies:**
 ```bash
 npm run dev
 ```
-
-**Start the development server:**
 
 The application will be available at [http://localhost:3005](http://localhost:3005)
 
@@ -249,6 +247,6 @@ npm start
 ```
 **Note:** The project includes mock Firebase services for development, so it will run even without real Firebase credentials.
 
-Live project page: [https://freebling-portal-demo.vercel.app](https://freebling-portal-demo.vercel.app)
+[Live demo deployed on Vercel:](https://freebling-portal-demo.vercel.app)
 
 **Author: [Maksym Chukhrai](https://www.mchukhrai.com)**
