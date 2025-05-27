@@ -1,5 +1,7 @@
 # Report on Analysis and Improvement of FreeBling Portal v1.1.9
 
+[Jump to Installation and Launch](#-installation-and-launch)
+
 ## 📋 Project Overview
 
 - **Analyzed Version:** 1.1.9 (developed 7 months ago)  
@@ -20,7 +22,8 @@
 | `package.json`          | Missing critical dependencies                                        | Moved CSS tools to dependencies                                                        | ✅ Successful build on Vercel<br>✅ Production-ready                                               |
 | `tailwind.config.js`    | Mixed Next.js/TailwindCSS configuration                              | Clean TailwindCSS configuration                                                        | 🎨 Styles work correctly<br>🎨 Proper CSS generation                                               |
                                          
-                                         ## 🚨 Identified Critical Issues
+                                         
+## 🚨 Identified Critical Issues
 
 ### Security (Critical)
 
@@ -166,6 +169,86 @@ FreeBling Portal v1.1.9 has a solid technical foundation but requires substantia
 *Analysis conducted as part of technical interview.*  
 Demo: [https://freebling-portal-demo.vercel.app](https://freebling-portal-demo.vercel.app)
 
+## 🚀 Installation and Launch
+
+### Prerequisites
+
+- Local installation of **Node.js v16+**
+- **npm** or **yarn** package manager
+
+---
+
+### Standard Installation
+
+#### 1. Clone the repository:
+
+```bash
+git clone https://github.com/MaksymChukhrai/freebling-portal-analysis-clean.git
+```
+
+---
+
+#### 2. Running in Development Mode
+
+NPM Installation
+
+```bash
+cd freebling-portal-analysis-clean
+```
+
+**Go to the project root folder:**
+
+```bash
+npm install
+```
+
+**Install all project dependencies:**
+```bash
+npm run dev
+```
+
+**Start the development server:**
+
+The application will be available at [http://localhost:3005](http://localhost:3005)
+
+---
+
+### Environment Setup
+
+**Create `.env.local` file in the root directory:**
+
+```bash
+cp .env.example .env.local
+```
+
+**Add your environment variables:**
+
+```typescript
+NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+NEXTAUTH_URL=http://localhost:3005
+NEXTAUTH_SECRET=your-secret-key
+```
+
+---
+
+### Production Build
+
+**Build the application:**
+
+```bash
+npm run build
+```
 
 
+**Start production server:**
 
+```bash
+npm start
+```
+**Note:** The project includes mock Firebase services for development, so it will run even without real Firebase credentials.
+
+Live project page: [https://freebling-portal-demo.vercel.app](https://freebling-portal-demo.vercel.app)
+
+**Author: [Maksym Chukhrai](https://www.mchukhrai.com)**
