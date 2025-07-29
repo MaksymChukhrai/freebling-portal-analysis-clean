@@ -166,9 +166,6 @@ FreeBling Portal v1.1.9 has a solid technical foundation but requires substantia
 
 ---
 
-*Analysis conducted as part of technical interview.*  
-Demo: [https://freebling-portal-demo.vercel.app](https://freebling-portal-demo.vercel.app)
-
 ## 🚀 Installation and Launch
 
 ### Prerequisites
